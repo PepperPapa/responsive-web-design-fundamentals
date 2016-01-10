@@ -1,0 +1,119 @@
+body {
+  font-size: 16px;
+}
+.scores {
+  font-size: 12px;
+}
+.scores__table td {
+  text-align: center;
+}
+
+.snippet__thumbnail > img {
+  width: 100%;
+}
+.snippet {
+  display: flex;
+  flex-wrap: wrap;
+}
+.snippet__title {
+  order: 0;
+  width: 100%;
+  margin: 0 0 0.5em;
+}
+.snippet__thumbnail {
+  order: 1;
+  width: 30%;
+  margin: 0;
+}
+.snippet__description {
+  order: 2;
+  width: 70%;
+  margin: 0;
+  padding: 0 0 0 1em;
+  overflow: hidden;
+}
+.snippet__description {
+  max-height: 4.8em;
+}
+
+@media screen and (max-width: 609px) {
+  .header__title {
+    font-size: 2em;
+    line-height: 1.2em;
+  }
+  a#menu {
+    height: 36px;
+    padding: 1em;
+  }
+  .hero {
+    line-height: 1.2em;
+    width: 100%;
+  }
+  .description {
+    padding: 1em;
+  }
+  .description p {
+    margin: 16px 0;
+  }
+  .top-news {
+    padding: 1em;
+  }
+  .snippet__thumbnail {
+    display: none;
+  }
+  .snippet__description {
+    width: 100%;
+    padding: 0;
+  }
+  .scores__table {
+    font-size: 16px;
+  }
+  .scores__table th:nth-child(2) {
+    text-align: right;
+  }
+  .scores__location {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 610px) {
+  .scores__table {
+    font-size: 16px;
+  }
+  .scores__table th:nth-child(2) {
+    text-align: center;
+  }
+  .scores__location {
+    display: block;
+  }
+  .hero {
+    order: 0;
+    width: 60%;
+  }
+  .weather {
+    order: 1;
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 699px) {
+  .hero {
+    width: 50%;
+  }
+  .top-news {
+    order: 1;
+    width: 50%;
+  }
+  .scores {
+    order: 2;
+    width: 60%;
+  }
+  .scores__table {
+    font-size: 12px;
+    line-height: 2.4em;
+  }
+  .weather {
+    order: 3;
+    width: 40%;
+  }
+}
